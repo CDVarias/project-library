@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upper-part">
+            <div class="library-project">
+                <h2>Library: Project</h2>
+            </div>
+            <div class="newBtn-container">
+                <button id = "new-book">New Book</button>
+            </div>
+        </div>
+        <div class="modal">
+            <form id = "myForm" style = "display: none;">
+                <div class="info">
+                    <label for="title-name">Title:</label>
+                    <input type="text" id="title-name" name="title-name" required>
+                </div>
+                <div class="info">
+                    <label for="author-name">Author:</label>
+                    <input type="text" id="author-name" name="author-name" required>
+                </div>
+                <div class="info">
+                    <label for="number-of-pages">Pages:</label>
+                    <input type="number" id="number-of-pages" name="number-of-pages" required min="0" minlength="2" maxlength="4" >
+                </div>
+                <div class="info2">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read" name="read" class = "checkRead">
+                </div>
+                <input type="submit" value="Add Book" class="addBook-btn">
+            </form>
+        </div>
+        <div id = "library" class = "books"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

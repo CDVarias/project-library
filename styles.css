@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.upper-part{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.modal{
+    grid-row: 2 / 2;
+    grid-column: auto;
+}
+
+.newBtn-container{
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.books{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.info2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.addBook-btn{
+    margin-bottom: 20px;
+
+}
+
+
+
